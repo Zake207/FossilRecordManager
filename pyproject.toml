@@ -1,0 +1,26 @@
+[project]
+name = "fossil_register_manager"
+version = "0.1.0"
+description = "Web application that allows the user to control record about fossils and extingist species"
+authors = [
+    {name = "Airam Prieto González",email = "airampg207@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi (>=0.121.2,<0.122.0)",
+    "uvicorn (>=0.38.0,<0.39.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "sphinx (>=8.2.3,<9.0.0)",
+    "pytest (>=9.0.1,<10.0.0)",
+    "pylint (>=4.0.3,<5.0.0)"
+]
